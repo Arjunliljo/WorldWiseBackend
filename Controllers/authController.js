@@ -2,8 +2,8 @@ const User = require("../Models/userSchema");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-const SECRET_KEY =
-  "259b65e6c66fa07efffe8efce355210280b48aca3a9dbf45250f4171c43ff41e32ae59a37c167e9e73f58d5a36c68ca3a48105105a0a6ce21fc28ce014af8725";
+// const SECRET_KEY =
+//   "259b65e6c66fa07efffe8efce355210280b48aca3a9dbf45250f4171c43ff41e32ae59a37c167e9e73f58d5a36c68ca3a48105105a0a6ce21fc28ce014af8725";
 
 const login = async (req, res) => {
   const { userName, password } = req.body;
